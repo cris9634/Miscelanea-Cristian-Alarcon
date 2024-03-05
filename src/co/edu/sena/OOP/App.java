@@ -1,12 +1,10 @@
 package co.edu.sena.OOP;
 import java.util.Scanner;
 
-
 public class App {
     public static void main(String[] args) {
 
         Scanner scr = new Scanner(System.in);
-
         double numero1 = 0;
         double numero2 = 0;
         double numero3 = 0;
@@ -22,7 +20,6 @@ public class App {
         System.out.println("3. Ciclos");
         System.out.println("99. Salir");
         System.out.println("Ingrese una opción: ");
-
         opcion = scr.nextInt();
         switch (opcion) {
             case 1: {
@@ -137,41 +134,20 @@ public class App {
                 opcion = scr.nextInt();
                 switch (opcion) {
                     case 1: {
-                        System.out.println("-------");
+                        System.out.println("----------");
                         System.out.println("Número positivo o negativo");
                         System.out.println("Ingrese un número: ");
-                        numero1 = scr.nextDouble();
-                        if (numero1 > 0) {
-                            System.out.println("El número es positivo");
-                        }
-                        else {
-                            System.out.println("El número es negativo");
-                        };
+                        numero1 = scr.nextInt();
+                        System.out.println("El número es: " + data.positivoNegativo(numero1));
                         break;
                     }
                     case 2: {
-                        System.out.println("-------");
-                        System.out.println("Cual es mayor y cual es menor");
-                        System.out.println("Ingrese un número: ");
-                        numero1 = scr.nextDouble();
-                        System.out.println("Ingrese otro número: ");
-                        numero2 = scr.nextDouble();
-                        if (numero1 > numero2) {
-                            System.out.println(numero1 + " es mayor que " + numero2);
-                        }
-                        else {
-                            System.out.println(numero2 + " es mayor que " + numero1);
-                        };
-                        break;
-                    }
-                    case 3: {
+
 
                     }
-
 
 
                 }
-
 
             }; break;
             case 3: {}; break;
@@ -184,8 +160,6 @@ public class App {
 
 
     };
-
-
 
 };
 

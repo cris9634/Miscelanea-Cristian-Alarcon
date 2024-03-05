@@ -1,5 +1,6 @@
 package co.edu.sena.OOP;
 
+
 public class Data {
     // Metodos generales //
     //Metodo para calcular el area de un triangulo//
@@ -57,17 +58,30 @@ public class Data {
         return (numero1 + numero2 + numero3) / 3;
     }
 
+    //Metodos Condicionales//
+
     //Metodo para saber número positivo o negativo//
 
-    public int númeroPositivo(int numero) {
-        return numero;
-    }
+   public String positivoNegativo(double numero1) {
+        String mensaje;
+        if (numero1 > 0) {
+            mensaje = "El número es positivo";
+        } else {
+            mensaje = "El número es negativo";
+        }
+        return mensaje;
+   }
 
     //Metodo para saber cual es mayor y cual es menor//
     public int mayor(int numero1, int numero2) {
         return numero1 > numero2? numero1 : numero2;
     }
 
+    //Metodo para saber de 3 enteros cual es mayor//
+
+    public int mayor(int numero1, int numero2, int numero3) {
+        return numero1 > numero2? numero1 : numero2 > numero3? numero2 : numero3;
+    }
 
 }
 
