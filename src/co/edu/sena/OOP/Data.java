@@ -66,21 +66,46 @@ public class Data {
         String mensaje;
         if (numero1 > 0) {
             mensaje = "El número es positivo";
-        } else {
-            mensaje = "El número es negativo";
         }
+        else {
+            mensaje = "El número es negativo";
+        };
         return mensaje;
    }
+   //Metodo para saber cual es mayor y cual es menor//
 
-    //Metodo para saber cual es mayor y cual es menor//
-    public int mayor(int numero1, int numero2) {
-        return numero1 > numero2? numero1 : numero2;
+    public String mayorMenor(double numero1, double numero2) {
+        String mensaje;
+        if (numero1 > numero2) {
+            mensaje = "El número menor es: "+numero2+" y el mayor es "+numero1;
+        }
+        else {
+            mensaje = "El número menor es: "+numero1+" y el mayor es "+numero2;
+        };
+        return mensaje;
     }
 
     //Metodo para saber de 3 enteros cual es mayor//
 
-    public int mayor(int numero1, int numero2, int numero3) {
-        return numero1 > numero2? numero1 : numero2 > numero3? numero2 : numero3;
+    public String mayorOMenor (double numero1, double numero2, double numero3) {
+        String mensaje;
+        if(numero1 > numero2){
+            if(numero1 > numero3){
+                mensaje = "Mayor es "+numero3;
+            }
+            else{
+                mensaje = "Menor es "+numero1;
+            };
+        }
+        else{
+            if(numero2 > numero3){
+                mensaje = "Mayor es "+numero2;
+            }
+            else{
+                mensaje = "Menor es "+numero3;
+            };
+        };
+        return mensaje;
     }
 
 }

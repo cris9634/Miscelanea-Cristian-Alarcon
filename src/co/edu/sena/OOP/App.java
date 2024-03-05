@@ -142,8 +142,26 @@ public class App {
                         break;
                     }
                     case 2: {
-
-
+                        System.out.println("---------");
+                        System.out.println("Cual es mayor y cual es menor");
+                        System.out.println("Ingrese el primer número: ");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese el segundo número: ");
+                        numero2 = scr.nextDouble();
+                        System.out.println("El mayor número es: " + data.mayorMenor(numero1, numero2));
+                        break;
+                    }
+                    case 3: {
+                        System.out.println("----------");
+                        System.out.println("El mayor número");
+                        System.out.println("Ingrese el primer número: ");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese el segundo número ");
+                        numero2 = scr.nextDouble();
+                        System.out.println("Ingrese el tercer número");
+                        numero3 = scr.nextDouble();
+                        System.out.println("El número " + data.mayorOMenor(numero1, numero2, numero3));
+                        break;
                     }
 
 
