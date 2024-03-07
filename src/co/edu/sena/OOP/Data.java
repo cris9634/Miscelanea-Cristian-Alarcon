@@ -108,5 +108,55 @@ public class Data {
         return mensaje;
     }
 
+    //Metodo para sumar si A es menor que B, de lo contrario restar//
+
+    public double sumarRestar(double numero1, double numero2) {
+        if (numero1<numero2){
+                return numero1+numero2;
+        }
+        else {
+            return numero1-numero2;
+        }
+    }
+
+    //Metodo para determinar Cociente entre A y B//
+
+    public double cociente(double numero1, double numero2) {
+        if (numero2<1){
+            System.out.println("División por cero no definida");
+        };
+        return numero1/numero2;
+    }
+
+    //Metodo para sumar si entre A y B  hay número negativo, de lo contrario multiplicar//
+
+    public double sumarSi(double numero1, double numero2) {
+         if (numero1<0 || numero2<0){
+             return numero1+numero2;
+         }
+         else {
+             return numero1*numero2;
+         }
+    }
+
+    //Metodo para determinar año bisiesto//
+    public String bisiestoSi(double numero1) {
+        String mensaje;
+        if ((numero1 % 4 == 0) && (numero1 %100 !=0 || numero1 % 400 == 0)) {
+            return mensaje = "es bisiesto";
+        }
+        else {
+            return mensaje = "no es bisiesto";
+        }
+    }
+
+    //Metodos Ciclos//
+
+    //Metodo para Multiplos de 3 de 1 a 100//
+
+
+
+
+
 }
 

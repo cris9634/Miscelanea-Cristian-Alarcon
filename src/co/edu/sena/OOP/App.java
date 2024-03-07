@@ -23,7 +23,7 @@ public class App {
         opcion = scr.nextInt();
         switch (opcion) {
             case 1: {
-                // submenu operadores //
+                // Submenu operadores //
                 System.out.println("Categoria Operadores");
                 System.out.println("1 Calcular área triángulo");
                 System.out.println("2 Sumar dos números");
@@ -121,7 +121,7 @@ public class App {
                 break;
             }
             case 2: {
-                // submenu condicionales //
+                // Submenu condicionales //
                 System.out.println("Categoria Condicionales");
                 System.out.println("1 Número positivo o negativo");
                 System.out.println("2 Cual es mayor y cual es menor");
@@ -163,12 +163,82 @@ public class App {
                         System.out.println("El número " + data.mayorOMenor(numero1, numero2, numero3));
                         break;
                     }
+                    case 4: {
+                        System.out.println("-------");
+                        System.out.println("Sumar o restar");
+                        System.out.println("Ingrese el primer valor");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese el segundo valor");
+                        numero2 = scr.nextDouble();
+                        System.out.println("El resultado es: " + data.sumarRestar(numero1, numero2));
+                        break;
+                    }
+                    case 5: {
+                        System.out.println("-------");
+                        System.out.println("Cociente entre A y B");
+                        System.out.println("Ingrese el primer valor");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese el segundo valor");
+                        numero2 = scr.nextDouble();
+                        System.out.println("El resultado es: " + data.cociente(numero1, numero2));
+                        break;
+                    }
+                    case 6: {
+                        System.out.println("-------");
+                        System.out.println("Sumar si entre A y B  hay número negativo, de lo contrario multiplicar");
+                        System.out.println("Ingrese el primer valor");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese el segundo valor");
+                        numero2 = scr.nextDouble();
+                        System.out.println("El resultado es: " + data.sumarSi(numero1, numero2));
+                        break;
+                    }
+                    case 7: {
+                        System.out.println("--------");
+                        System.out.println("Determinar año bisiesto");
+                        System.out.println("Ingrese el año: ");
+                        numero1 = scr.nextInt();
+                        System.out.println("El año: " + data.bisiestoSi(numero1));
+                        break;
+                    }
 
 
                 }
 
             }; break;
-            case 3: {}; break;
+            case 3: {
+                // Submenu ciclos //
+                System.out.println("Categoria Ciclos");
+                System.out.println("1 Multiplos de 3 de 1 a 100");
+                System.out.println("2 Números impares entre 0 y 100");
+                System.out.println("3 Números pares entre el 1 y el 100");
+                System.out.println("4 Cuadrados de los números del 1 al 30");
+                System.out.println("5 Suma cuadrados 100 primeros números naturales");
+                System.out.println("6 Secuencia ascendente entre dos números");
+                System.out.println("7 Suma de números digitados");
+                System.out.println("digite  la opcion: ");
+                opcion = scr.nextInt();
+                switch (opcion) {
+                    case 1: {
+
+
+
+                    }
+
+
+
+
+
+                }
+
+
+
+
+
+
+
+
+            }; break;
             case 99: {
                 System.out.println("SALIR DEL  PROGRAMA");
             }; break;
