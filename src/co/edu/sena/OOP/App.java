@@ -201,8 +201,6 @@ public class App {
                         System.out.println("El año: " + data.bisiestoSi(numero1));
                         break;
                     }
-
-
                 }
 
             }; break;
