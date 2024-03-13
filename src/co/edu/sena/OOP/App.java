@@ -23,7 +23,7 @@ public class App {
         opcion = scr.nextInt();
         switch (opcion) {
             case 1: {
-                // Submenu operadores //
+                // Submenu operadores
                 System.out.println("Categoria Operadores");
                 System.out.println("1 Calcular área triángulo");
                 System.out.println("2 Sumar dos números");
@@ -53,7 +53,7 @@ public class App {
                         numero1 = scr.nextDouble();
                         System.out.println("Ingrese el segundo número: ");
                         numero2 = scr.nextDouble();
-                        System.out.println("El resultado es: " + data.sumarDosNumeros (numero1,numero2));
+                        System.out.println("El resultado es: " + data.sumarDosNumeros(numero1, numero2));
                         break;
                     }
                     case 3: {
@@ -75,10 +75,8 @@ public class App {
                     case 5: {
                         System.out.println("---------");
                         System.out.println("Valor del área y del perímetro de un cuadrado");
-                        System.out.println("Ingrese la base: ");
+                        System.out.println("Digite el valor del lado: ");
                         numero1 = scr.nextDouble();
-                        System.out.println("Ingrese la altura: ");
-                        numero2 = scr.nextDouble();
                         System.out.println("El área del cuadrado es: " + data.areaCuadrado(numero1));
                         System.out.println("El perímetro del cuadrado es: " + data.perimetroCuadrado(numero1));
                         break;
@@ -115,13 +113,14 @@ public class App {
                         System.out.println("El promedio de los tres números es: " + data.promedioTresNumeros(numero1, numero2, numero3));
                         break;
                     }
-                    default: System.out.println("Opción no valida");
+                    default:
+                        System.out.println("Opción no valida");
                         break;
                 };
                 break;
             }
             case 2: {
-                // Submenu condicionales //
+                // Submenu condicionales
                 System.out.println("Categoria Condicionales");
                 System.out.println("1 Número positivo o negativo");
                 System.out.println("2 Cual es mayor y cual es menor");
@@ -201,11 +200,13 @@ public class App {
                         System.out.println("El año: " + data.bisiestoSi(numero1));
                         break;
                     }
-                }
+                };
+            };
+            break;
 
-            }; break;
             case 3: {
-                // Submenu ciclos //
+                // Submenu ciclos
+
                 System.out.println("Categoria Ciclos");
                 System.out.println("1 Multiplos de 3 de 1 a 100");
                 System.out.println("2 Números impares entre 0 y 100");
@@ -213,39 +214,47 @@ public class App {
                 System.out.println("4 Cuadrados de los números del 1 al 30");
                 System.out.println("5 Suma cuadrados 100 primeros números naturales");
                 System.out.println("6 Secuencia ascendente entre dos números");
-                System.out.println("7 Suma de números digitados");
+                System.out.println("7 Suma de números digitados mientras no sea cero");
                 System.out.println("digite  la opcion: ");
                 opcion = scr.nextInt();
                 switch (opcion) {
                     case 1: {
-
-
-
+                        System.out.println("----------");
+                        System.out.println("Multiplos de 3, de 1 y 100" +data.multiplos3(numero1));
+                        break;
                     }
-
-
-
-
-
-                }
-
-
-
-
-
-
-
-
-            }; break;
+                    case 2: {
+                        System.out.println("----------");
+                        System.out.println("Los impares entre 0 y 100 " +data.impares(numero1));
+                        break;
+                    }
+                    case 3: {
+                        System.out.println("----------");
+                        System.out.println("Los pares entre el 1 y el 100 " +data.numerospares(numero1));
+                        break;
+                    }
+                    case 4: {
+                        System.out.println("----------");
+                        System.out.println("Cuadrados de los números del 1 al 30  " +data.cuadradosDel(numero1));
+                        break;
+                    }
+                    case 5: {
+                        System.out.println("----------");
+                        System.out.println("La suma de cuadrados es: " +data.sumaCuadrado(numero1));
+                        break;
+                    }
+                };
+            };
+            break;
             case 99: {
-                System.out.println("SALIR DEL  PROGRAMA");
-            }; break;
-            default: System.out.println("Opción no valida");
-                break;
+                System.out.println("SALIR DEL PROGRAMA");
+            };
+            break;
+            default: {
+                System.out.println("Opcion no valida");
+            };
+            break;
+
         };
-
-
     };
-
 };
-
