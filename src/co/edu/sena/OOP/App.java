@@ -200,6 +200,9 @@ public class App {
                         System.out.println("El año: " + data.bisiestoSi(numero1));
                         break;
                     }
+                    default:
+                        System.out.println("Opción no valida");
+                        break;
                 };
             };
             break;
@@ -243,6 +246,23 @@ public class App {
                         System.out.println("La suma de cuadrados es: " +data.sumaCuadrado(numero1));
                         break;
                     }
+                    case 6: {
+                        System.out.println("----------");
+                        System.out.println("Ingrese un número");
+                        numero1 = scr.nextDouble();
+                        System.out.println("Ingrese un número mayor");
+                        numero2 = scr.nextDouble();
+                        System.out.println("Secuencia ascendente del número:  " +data.secuenciaAscendente(numero1, numero2));
+                        break;
+                    }
+                    case 7: {
+                        System.out.println("---------");
+                        System.out.println("La suma es: "+data.sumaNocero(numero1));
+                        break;
+                    }
+                    default:
+                        System.out.println("Opción no valida");
+                        break;
                 };
             };
             break;
@@ -254,7 +274,6 @@ public class App {
                 System.out.println("Opcion no valida");
             };
             break;
-
         };
     };
 };
